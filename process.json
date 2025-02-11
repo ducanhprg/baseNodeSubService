@@ -1,0 +1,19 @@
+{
+    "apps": [
+        {
+            "name": "server",
+            "script": "src/server.ts",
+            "interpreter": "node",
+            "interpreter_args": "-r ts-node/register -r tsconfig-paths/register",
+            "exec_mode": "fork",
+            "watch": true
+        },
+        {
+            "name": "queueConsumer",
+            "script": "src/entrypoints/queueConsumer.ts",
+            "interpreter": "node",
+            "interpreter_args": "-r ts-node/register -r tsconfig-paths/register",
+            "exec_mode": "fork"
+        }
+    ]
+}
