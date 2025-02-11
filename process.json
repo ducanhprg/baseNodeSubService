@@ -6,6 +6,7 @@
             "interpreter": "node",
             "interpreter_args": "-r ts-node/register -r tsconfig-paths/register",
             "exec_mode": "fork",
+            "ignore_watch": ["node_modules", "logs"],
             "watch": true
         },
         {
@@ -13,7 +14,9 @@
             "script": "src/entrypoints/queueConsumer.ts",
             "interpreter": "node",
             "interpreter_args": "-r ts-node/register -r tsconfig-paths/register",
-            "exec_mode": "fork"
+            "exec_mode": "fork",
+            "ignore_watch": ["node_modules", "logs"],
+            "watch": true
         }
     ]
 }
